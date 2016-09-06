@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3319F4581D7EABD100BD6839 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3319F4571D7EABD100BD6839 /* AppDelegate.swift */; };
+		3319F45A1D7EABD100BD6839 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3319F4591D7EABD100BD6839 /* ViewController.swift */; };
+		3319F45C1D7EABD100BD6839 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3319F45B1D7EABD100BD6839 /* Assets.xcassets */; };
+		3319F45F1D7EABD100BD6839 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3319F45D1D7EABD100BD6839 /* Main.storyboard */; };
+		3319F46D1D7EABFE00BD6839 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3319F46C1D7EABFE00BD6839 /* Cocoa.framework */; };
+		3319F4721D7EABFE00BD6839 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3319F4711D7EABFE00BD6839 /* SourceEditorExtension.swift */; };
+		3319F4741D7EABFE00BD6839 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3319F4731D7EABFE00BD6839 /* SourceEditorCommand.swift */; };
+		3319F4781D7EABFE00BD6839 /* FlavorFlavourXcodeExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3319F46A1D7EABFE00BD6839 /* FlavorFlavourXcodeExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3319F4761D7EABFE00BD6839 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3319F44C1D7EABD000BD6839 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3319F4691D7EABFE00BD6839;
+			remoteInfo = FlavorFlavourXcodeExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3319F47C1D7EABFE00BD6839 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3319F4781D7EABFE00BD6839 /* FlavorFlavourXcodeExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3319F4541D7EABD100BD6839 /* FlavorFlavour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlavorFlavour.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3319F4571D7EABD100BD6839 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3319F4591D7EABD100BD6839 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3319F45B1D7EABD100BD6839 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3319F45E1D7EABD100BD6839 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3319F4601D7EABD100BD6839 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3319F46A1D7EABFE00BD6839 /* FlavorFlavourXcodeExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FlavorFlavourXcodeExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3319F46C1D7EABFE00BD6839 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3319F4701D7EABFE00BD6839 /* FlavorFlavourXcodeExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FlavorFlavourXcodeExtension.entitlements; sourceTree = "<group>"; };
+		3319F4711D7EABFE00BD6839 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		3319F4731D7EABFE00BD6839 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		3319F4751D7EABFE00BD6839 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3319F4511D7EABD000BD6839 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3319F4671D7EABFE00BD6839 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3319F46D1D7EABFE00BD6839 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3319F44B1D7EABD000BD6839 = {
+			isa = PBXGroup;
+			children = (
+				3319F4561D7EABD100BD6839 /* FlavorFlavour */,
+				3319F46E1D7EABFE00BD6839 /* FlavorFlavourXcodeExtension */,
+				3319F46B1D7EABFE00BD6839 /* Frameworks */,
+				3319F4551D7EABD100BD6839 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3319F4551D7EABD100BD6839 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3319F4541D7EABD100BD6839 /* FlavorFlavour.app */,
+				3319F46A1D7EABFE00BD6839 /* FlavorFlavourXcodeExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3319F4561D7EABD100BD6839 /* FlavorFlavour */ = {
+			isa = PBXGroup;
+			children = (
+				3319F4571D7EABD100BD6839 /* AppDelegate.swift */,
+				3319F4591D7EABD100BD6839 /* ViewController.swift */,
+				3319F45B1D7EABD100BD6839 /* Assets.xcassets */,
+				3319F45D1D7EABD100BD6839 /* Main.storyboard */,
+				3319F4601D7EABD100BD6839 /* Info.plist */,
+			);
+			path = FlavorFlavour;
+			sourceTree = "<group>";
+		};
+		3319F46B1D7EABFE00BD6839 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3319F46C1D7EABFE00BD6839 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3319F46E1D7EABFE00BD6839 /* FlavorFlavourXcodeExtension */ = {
+			isa = PBXGroup;
+			children = (
+				3319F4711D7EABFE00BD6839 /* SourceEditorExtension.swift */,
+				3319F4731D7EABFE00BD6839 /* SourceEditorCommand.swift */,
+				3319F4751D7EABFE00BD6839 /* Info.plist */,
+				3319F46F1D7EABFE00BD6839 /* Supporting Files */,
+			);
+			path = FlavorFlavourXcodeExtension;
+			sourceTree = "<group>";
+		};
+		3319F46F1D7EABFE00BD6839 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3319F4701D7EABFE00BD6839 /* FlavorFlavourXcodeExtension.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3319F4531D7EABD000BD6839 /* FlavorFlavour */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3319F4631D7EABD100BD6839 /* Build configuration list for PBXNativeTarget "FlavorFlavour" */;
+			buildPhases = (
+				3319F4501D7EABD000BD6839 /* Sources */,
+				3319F4511D7EABD000BD6839 /* Frameworks */,
+				3319F4521D7EABD000BD6839 /* Resources */,
+				3319F47C1D7EABFE00BD6839 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3319F4771D7EABFE00BD6839 /* PBXTargetDependency */,
+			);
+			name = FlavorFlavour;
+			productName = FlavorFlavour;
+			productReference = 3319F4541D7EABD100BD6839 /* FlavorFlavour.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3319F4691D7EABFE00BD6839 /* FlavorFlavourXcodeExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3319F4791D7EABFE00BD6839 /* Build configuration list for PBXNativeTarget "FlavorFlavourXcodeExtension" */;
+			buildPhases = (
+				3319F4661D7EABFE00BD6839 /* Sources */,
+				3319F4671D7EABFE00BD6839 /* Frameworks */,
+				3319F4681D7EABFE00BD6839 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlavorFlavourXcodeExtension;
+			productName = FlavorFlavourXcodeExtension;
+			productReference = 3319F46A1D7EABFE00BD6839 /* FlavorFlavourXcodeExtension.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3319F44C1D7EABD000BD6839 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Designated Nerd Software";
+				TargetAttributes = {
+					3319F4531D7EABD000BD6839 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4U392EMNT3;
+						ProvisioningStyle = Automatic;
+					};
+					3319F4691D7EABFE00BD6839 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4U392EMNT3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3319F44F1D7EABD000BD6839 /* Build configuration list for PBXProject "FlavorFlavour" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3319F44B1D7EABD000BD6839;
+			productRefGroup = 3319F4551D7EABD100BD6839 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3319F4531D7EABD000BD6839 /* FlavorFlavour */,
+				3319F4691D7EABFE00BD6839 /* FlavorFlavourXcodeExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3319F4521D7EABD000BD6839 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3319F45C1D7EABD100BD6839 /* Assets.xcassets in Resources */,
+				3319F45F1D7EABD100BD6839 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3319F4681D7EABFE00BD6839 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3319F4501D7EABD000BD6839 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3319F45A1D7EABD100BD6839 /* ViewController.swift in Sources */,
+				3319F4581D7EABD100BD6839 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3319F4661D7EABFE00BD6839 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3319F4721D7EABFE00BD6839 /* SourceEditorExtension.swift in Sources */,
+				3319F4741D7EABFE00BD6839 /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3319F4771D7EABFE00BD6839 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3319F4691D7EABFE00BD6839 /* FlavorFlavourXcodeExtension */;
+			targetProxy = 3319F4761D7EABFE00BD6839 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3319F45D1D7EABD100BD6839 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3319F45E1D7EABD100BD6839 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3319F4611D7EABD100BD6839 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3319F4621D7EABD100BD6839 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		3319F4641D7EABD100BD6839 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4U392EMNT3;
+				INFOPLIST_FILE = FlavorFlavour/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.designatednerd.FlavorFlavour;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3319F4651D7EABD100BD6839 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4U392EMNT3;
+				INFOPLIST_FILE = FlavorFlavour/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.designatednerd.FlavorFlavour;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3319F47A1D7EABFE00BD6839 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FlavorFlavourXcodeExtension/FlavorFlavourXcodeExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4U392EMNT3;
+				INFOPLIST_FILE = FlavorFlavourXcodeExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.designatednerd.FlavorFlavour.FlavorFlavourXcodeExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3319F47B1D7EABFE00BD6839 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FlavorFlavourXcodeExtension/FlavorFlavourXcodeExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4U392EMNT3;
+				INFOPLIST_FILE = FlavorFlavourXcodeExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.designatednerd.FlavorFlavour.FlavorFlavourXcodeExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3319F44F1D7EABD000BD6839 /* Build configuration list for PBXProject "FlavorFlavour" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3319F4611D7EABD100BD6839 /* Debug */,
+				3319F4621D7EABD100BD6839 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3319F4631D7EABD100BD6839 /* Build configuration list for PBXNativeTarget "FlavorFlavour" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3319F4641D7EABD100BD6839 /* Debug */,
+				3319F4651D7EABD100BD6839 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3319F4791D7EABFE00BD6839 /* Build configuration list for PBXNativeTarget "FlavorFlavourXcodeExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3319F47A1D7EABFE00BD6839 /* Debug */,
+				3319F47B1D7EABFE00BD6839 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3319F44C1D7EABD000BD6839 /* Project object */;
+}
