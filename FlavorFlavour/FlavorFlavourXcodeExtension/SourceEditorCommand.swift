@@ -108,6 +108,10 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
             invocation.buffer.lines.replaceObject(at: index, with: updatedLine)
         }
         
+        // Send a notification that will let the main app know what happened
+        let notificationWrapper = CFNotificationCenterWrapper()
+        notificationWrapper.sendNotificationForMessage(withIdentifier: mode.rawValue)        
+        
         completionHandler(nil)
     }
 }
