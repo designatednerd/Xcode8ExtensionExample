@@ -8,15 +8,11 @@
 
 import Foundation
 import XcodeKit
+import FlavorKit
 
 class SourceEditorCommand: NSObject, XCSourceEditorCommand {
     
-    enum Mode: String {
-        case
-        UStoUK,
-        UKtoUS
-    }
-    
+
     enum WordSpelling: String {
         case
         flavor,
@@ -44,7 +40,7 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
             }
         }
         
-        func incorrectSpellingForMode(mode: Mode) -> String {
+        func incorrectSpellingForMode(mode: FlavorMode) -> String {
             switch mode {
             case .UStoUK:
                 return self.USSpelling
@@ -53,7 +49,7 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
             }
         }
         
-        func correctSpellingForMode(mode: Mode) -> String {
+        func correctSpellingForMode(mode: FlavorMode) -> String {
             switch mode {
             case .UStoUK:
                 return self.UKSpelling
@@ -73,12 +69,10 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
     }
     
     func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Void ) -> Void {
-        // Implement your command here, invoking the completion handler when done. Pass it nil on success, and an NSError on failure.
-        
         
         guard
             let lastComponent = invocation.commandIdentifier.components(separatedBy: ".").last,
-            let mode = Mode(rawValue: lastComponent) else {
+            let mode = FlavorMode(rawValue: lastComponent) else {
                 assertionFailure("Couldn't figure out mode!")
                 completionHandler(nil)
                 return

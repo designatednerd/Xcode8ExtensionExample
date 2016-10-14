@@ -20,6 +20,7 @@
 		339C16E71DB058CE0092F5CA /* FlavorKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 339C16D71DB058CE0092F5CA /* FlavorKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		339C16EA1DB058CE0092F5CA /* FlavorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 339C16D51DB058CE0092F5CA /* FlavorKit.framework */; };
 		339C16EB1DB058CE0092F5CA /* FlavorKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 339C16D51DB058CE0092F5CA /* FlavorKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		339C16F91DB063DF0092F5CA /* FlavorMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339C16F81DB063DF0092F5CA /* FlavorMode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,7 @@
 		339C16DD1DB058CE0092F5CA /* FlavorKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlavorKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		339C16E41DB058CE0092F5CA /* FlavorKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlavorKitTests.m; sourceTree = "<group>"; };
 		339C16E61DB058CE0092F5CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		339C16F81DB063DF0092F5CA /* FlavorMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlavorMode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,7 @@
 			children = (
 				339C16D71DB058CE0092F5CA /* FlavorKit.h */,
 				339C16D81DB058CE0092F5CA /* Info.plist */,
+				339C16F81DB063DF0092F5CA /* FlavorMode.swift */,
 			);
 			path = FlavorKit;
 			sourceTree = "<group>";
@@ -415,6 +418,14 @@
 			files = (
 				3319F4721D7EABFE00BD6839 /* SourceEditorExtension.swift in Sources */,
 				3319F4741D7EABFE00BD6839 /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		339C16D01DB058CE0092F5CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				339C16F91DB063DF0092F5CA /* FlavorMode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
