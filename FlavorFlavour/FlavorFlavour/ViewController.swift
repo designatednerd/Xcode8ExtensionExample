@@ -9,11 +9,14 @@
 import Cocoa
 import FlavorKit
 
+/// The main view controller for the host mac app
 class ViewController: NSViewController {
     
     @IBOutlet private var lastModeLabel: NSTextField!
     
     private let notificationWrapper = CFNotificationCenterWrapper()
+    
+    //MARK: - View Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +36,8 @@ class ViewController: NSViewController {
         NotificationCenter.default.removeObserver(self)
     }
     
+    //MARK: - Notification handling
+    
     @objc private func handle(notification: NSNotification) {
         guard
             let userInfo = notification.userInfo,
@@ -44,6 +49,4 @@ class ViewController: NSViewController {
         
         self.lastModeLabel.stringValue = mode.emojified
     }
-
 }
-
