@@ -7,12 +7,24 @@
 //
 
 import Foundation
-import XcodeKit
 import FlavorKit
+import XcodeKit
 
-class SourceEditorCommand: NSObject, XCSourceEditorCommand {
-    
+//MARK: - Class definition
 
+/**
+ A single source editor command. You can have many of these in one extension.
+ 
+ The class and its invocations are set up in Info.plist under XCSourceEditorCommandDefinitions. 
+ */
+class SourceEditorCommand: NSObject {
+
+    /// This class doesn't do anything except conform to XCSourceEditorCommand. Keep scrolling!
+}
+
+// MARK: - XCSourceEditorCommand Protocol
+
+extension SourceEditorCommand: XCSourceEditorCommand {
     
     func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Void ) -> Void {
         
@@ -24,6 +36,7 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
                 return
         }
         
+        //Go through the lines in the buffer one by one
         for index in 0..<invocation.buffer.lines.count {
             guard let line = invocation.buffer.lines[index] as? String else {
                 continue
@@ -32,7 +45,7 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
             //Check if this is a simple comment
             let trimmed = line.trimmingCharacters(in: .whitespaces)
             guard trimmed.hasPrefix("//") else {
-                //Not a comment, keep going
+                //Not a comment, move on to the next line
                 continue
             }
             
@@ -54,7 +67,7 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
             invocation.buffer.lines.replaceObject(at: index, with: updatedLine)
         }
         
-        // Send a notification that will let the main app know what happened
+        // Send a notification that will let the mac app know what happened
         let notificationWrapper = CFNotificationCenterWrapper()
         notificationWrapper.sendNotificationForMessage(withIdentifier: mode.rawValue)        
         
