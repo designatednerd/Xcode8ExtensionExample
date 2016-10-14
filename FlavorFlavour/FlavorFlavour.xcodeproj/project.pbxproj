@@ -23,6 +23,7 @@
 		339C16F51DB059390092F5CA /* CFNotificationCenterWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 339C16F31DB059390092F5CA /* CFNotificationCenterWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		339C16F61DB059390092F5CA /* CFNotificationCenterWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 339C16F41DB059390092F5CA /* CFNotificationCenterWrapper.m */; };
 		339C16F91DB063DF0092F5CA /* FlavorMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339C16F81DB063DF0092F5CA /* FlavorMode.swift */; };
+		339C16FD1DB0CDE70092F5CA /* WordSpelling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339C16FC1DB0CDE70092F5CA /* WordSpelling.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,7 @@
 		339C16F31DB059390092F5CA /* CFNotificationCenterWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFNotificationCenterWrapper.h; sourceTree = "<group>"; };
 		339C16F41DB059390092F5CA /* CFNotificationCenterWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFNotificationCenterWrapper.m; sourceTree = "<group>"; };
 		339C16F81DB063DF0092F5CA /* FlavorMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlavorMode.swift; sourceTree = "<group>"; };
+		339C16FC1DB0CDE70092F5CA /* WordSpelling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordSpelling.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 			children = (
 				3319F4711D7EABFE00BD6839 /* SourceEditorExtension.swift */,
 				3319F4731D7EABFE00BD6839 /* SourceEditorCommand.swift */,
+				339C16FC1DB0CDE70092F5CA /* WordSpelling.swift */,
 				3319F4751D7EABFE00BD6839 /* Info.plist */,
 				3319F46F1D7EABFE00BD6839 /* Supporting Files */,
 			);
@@ -424,6 +427,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3319F4721D7EABFE00BD6839 /* SourceEditorExtension.swift in Sources */,
+				339C16FD1DB0CDE70092F5CA /* WordSpelling.swift in Sources */,
 				3319F4741D7EABFE00BD6839 /* SourceEditorCommand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -763,6 +767,7 @@
 				339C16EE1DB058CE0092F5CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		339C16F01DB058CE0092F5CA /* Build configuration list for PBXNativeTarget "FlavorKitTests" */ = {
 			isa = XCConfigurationList;
@@ -771,6 +776,7 @@
 				339C16F21DB058CE0092F5CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
