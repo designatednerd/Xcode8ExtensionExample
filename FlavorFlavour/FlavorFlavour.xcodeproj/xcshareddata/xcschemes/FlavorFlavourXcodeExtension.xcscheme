@@ -78,7 +78,6 @@
       allowLocationSimulation = "YES">
       <PathRunnable
          runnableDebuggingMode = "0"
-         BundleIdentifier = "com.apple.dt.Xcode"
          FilePath = "/Applications/Xcode.app">
       </PathRunnable>
       <MacroExpansion>
@@ -92,7 +91,7 @@
       </MacroExpansion>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "${SRCROOT}/ExtensionTestPlayground.playground"
+            argument = "$(SRCROOT)/ExtensionTestPlayground.playground"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
